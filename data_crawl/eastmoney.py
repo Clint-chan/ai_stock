@@ -1,3 +1,4 @@
+# /data_crawl/eastmoney.py
 from utils.data_sources.news.eastmoney_streaming import Eastmoney_Streaming
 from datetime import datetime
 import os
@@ -10,7 +11,7 @@ if not os.path.exists(news_folder):
 
 # 配置参数
 pages = 3
-stock = "002251"  # 贵州茅台
+stock = "002251"  # 步步高
 config = {
     "max_retry": 3,
     "request_delay": 0.5

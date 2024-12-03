@@ -1,10 +1,9 @@
 Metadata-Version: 2.1
 Name: ai_stock
-Version: 0.1
+Version: 0.1.0
 Summary: A stock analysis tool
-Author: 陈定钢
-Author-email: your.email@example.com
-Keywords: stock,analysis,AI
+Author-email: 陈定钢 <your.email@example.com>
+Project-URL: Homepage, https://github.com/yourusername/ai_stock
 Requires-Dist: akshare==1.15.40
 Requires-Dist: beautifulsoup4==4.12.3
 Requires-Dist: bs4==0.0.2
@@ -18,7 +17,7 @@ Requires-Dist: idna==3.10
 Requires-Dist: jsonpath==0.82.2
 Requires-Dist: lxml==5.3.0
 Requires-Dist: mini-racer==0.12.4
-Requires-Dist: numpy==2.1.3
+Requires-Dist: numpy==1.26.4
 Requires-Dist: openpyxl==3.1.5
 Requires-Dist: pandas==2.2.3
 Requires-Dist: PyPDF2==3.0.1
@@ -33,4 +32,9 @@ Requires-Dist: tzdata==2024.2
 Requires-Dist: urllib3==2.2.3
 Requires-Dist: webencodings==0.5.1
 Requires-Dist: xlrd==2.0.1
-Requires-Dist: pandas
+Requires-Dist: langchain
+Requires-Dist: openai
+Requires-Dist: Pillow
+Requires-Dist: matplotlib
+Requires-Dist: langchain_openai
+Requires-Dist: jupyter_client

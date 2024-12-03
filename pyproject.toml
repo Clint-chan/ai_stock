@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai_stock"
+version = "0.1.0"
+description = "A stock analysis tool"
+authors = [{name = "陈定钢", email = "your.email@example.com"}]
+dependencies = [
+    "akshare==1.15.40",
+    "beautifulsoup4==4.12.3",
+    "bs4==0.0.2",
+    "certifi==2024.8.30",
+    "charset-normalizer==3.4.0",
+    "colorama==0.4.6",
+    "decorator==5.1.1",
+    "et_xmlfile==2.0.0",
+    "html5lib==1.1",
+    "idna==3.10",
+    "jsonpath==0.82.2",
+    "lxml==5.3.0",
+    "mini-racer==0.12.4",
+    "numpy==1.26.4",
+    "openpyxl==3.1.5",
+    "pandas==2.2.3",
+    "PyPDF2==3.0.1",
+    "python-dateutil==2.9.0.post0",
+    "pytz==2024.2",
+    "requests==2.32.3",
+    "six==1.16.0",
+    "soupsieve==2.6",
+    "tabulate==0.9.0",
+    "tqdm==4.67.1",
+    "tzdata==2024.2",
+    "urllib3==2.2.3",
+    "webencodings==0.5.1",
+    "xlrd==2.0.1",
+    "langchain",
+    "openai",
+    "Pillow",
+    "matplotlib",
+    "langchain_openai",
+    "jupyter_client",
+    "langchain_community"
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/ai_stock"
+
+[tool.setuptools]
+packages = ["utils", "utils.data_sources", "utils.data_sources.news"]

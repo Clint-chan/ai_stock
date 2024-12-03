@@ -7,6 +7,7 @@ from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 from ai_agent.tools.calculator import calculator
 from ai_agent.tools.image_generator import draw_image
 from ai_agent.tools.code_interpreter import execute_python
+from ai_agent.tools.stock_news import get_stock_news
 from ai_agent.tools.utils.image_utils import setup_matplotlib
 from ai_agent.config.settings import LLM_CONFIG
 from ai_agent.prompts.tool_prompts import ToolPromptBuilder
@@ -18,7 +19,7 @@ def init_agent(system_prompt: str = None, use_python: bool = False) -> AgentExec
 
     # 直接在配置中添加callbacks
     llm = ChatOpenAI(**LLM_CONFIG, callbacks=callbacks)
-    tools = [calculator, draw_image, execute_python]
+    tools = [calculator, draw_image, execute_python,get_stock_news]
 
     prompt = PromptTemplate.from_template(
         ToolPromptBuilder.build_prompt(system_prompt, include_python_guidelines=use_python)

@@ -12,7 +12,6 @@ class Eastmoney_Streaming(News_Downloader):
         self.dataframe = pd.DataFrame()
 
     def download_streaming_stock(self, stock = "600519", rounds = 3):
-        print( "Geting pages: ", end = "")
         if rounds > 0:
             for r in range(rounds):
                 br = self._gather_pages(stock, r)
@@ -30,11 +29,9 @@ class Eastmoney_Streaming(News_Downloader):
                 if error_count>10:
                     print("Connection Error")
                 r += 1
-        print( f"Get total {r+1} pages.")
         self.dataframe = self.dataframe.reset_index(drop = True)
     
     def _gather_pages(self, stock, page):
-        print( page, end = " ")
         url = f"https://guba.eastmoney.com/list,{stock},1,f_{page}.html"
         headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
