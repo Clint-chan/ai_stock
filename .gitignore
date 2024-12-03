@@ -4,3 +4,4 @@
 /ai_agent/config/
 *.pyc
 *.csv
+/ai_agent/prompts/__pycache__
