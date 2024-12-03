@@ -38,3 +38,4 @@ Requires-Dist: Pillow
 Requires-Dist: matplotlib
 Requires-Dist: langchain_openai
 Requires-Dist: jupyter_client
+Requires-Dist: langchain_community

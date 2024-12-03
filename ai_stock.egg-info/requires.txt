@@ -32,3 +32,4 @@ Pillow
 matplotlib
 langchain_openai
 jupyter_client
+langchain_community
