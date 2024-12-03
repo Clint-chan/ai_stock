@@ -1,3 +1,4 @@
 
 .env
 /ai_agent/tools/workspace/
+/ai_agent/config/
