@@ -4,13 +4,13 @@ from langchain.agents import create_react_agent, AgentExecutor
 from langchain.prompts import PromptTemplate
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 
-from tools.calculator import calculator
-from tools.image_generator import draw_image
-from tools.code_interpreter import execute_python
-from tools.utils.image_utils import setup_matplotlib
-from config.settings import LLM_CONFIG
-from prompts.tool_prompts import ToolPromptBuilder
-from prompts.normal_prompts import *
+from ai_agent.tools.calculator import calculator
+from ai_agent.tools.image_generator import draw_image
+from ai_agent.tools.code_interpreter import execute_python
+from ai_agent.tools.utils.image_utils import setup_matplotlib
+from ai_agent.config.settings import LLM_CONFIG
+from ai_agent.prompts.tool_prompts import ToolPromptBuilder
+from ai_agent.prompts.normal_prompts import *
 
 def init_agent(system_prompt: str = None, use_python: bool = False) -> AgentExecutor:
     """初始化 ReAct Agent"""
